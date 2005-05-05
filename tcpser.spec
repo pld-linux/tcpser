@@ -13,17 +13,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 TCPSER is a utility that turns a PC serial port into an emulated
-Hayes(tm) compatible modem, with the phone connection replaced by
+Hayes(TM) compatible modem, with the phone connection replaced by
 TCP/IP for both inbound and outbound connections. TCPSER is used as a
 low-cost way to put older computing systems (like 8-bit BBSes) on the
 Internet.
 
 %description -l pl
 TCPSER to program zamieniaj±cy port szeregowy PC w emulowany modem
-zgodny ze standardem Hayes(tm). Liniê telefoniczn± zastêpuje protokó³
+zgodny ze standardem Hayes(TM). Liniê telefoniczn± zastêpuje protokó³
 TCP/IP zapewniaj±cy obs³ugê po³±czeñ przychodz±cych i wychodz±cych.
 TCPSER jest u¿ywany jako tani sposób na udostêpnienie starszych
-systemów (np. 8-bitowych BBSów) w internecie.
+systemów (np. 8-bitowych BBS-ów) w Internecie.
 
 %prep
 %setup -q
@@ -31,9 +31,8 @@ systemów (np. 8-bitowych BBSów) w internecie.
 
 %build
 CFLAGS="%{rpmcflags}" \
-%{__make} \
-	CC="%{__cc}" \
-	all
+%{__make} all \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
