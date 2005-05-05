@@ -1,11 +1,12 @@
+%define		_rc	rc9
 Summary:	A serial port to TCP/IP bridge
 Summary(pl):	Most pomiêdzy portem szeregowym a TCP/IP
 Name:		tcpser
-Version:	1.0rc9
-Release:	1
+Version:	1.0
+Release:	0.%{_rc}.1
 License:	GPL
 Group:		Networking
-Source0:	http://www.jbrain.com/pub/linux/serial/%{name}-%{version}.tar.gz
+Source0:	http://www.jbrain.com/pub/linux/serial/%{name}-%{version}%{_rc}.tar.gz
 # Source0-md5:	37770b332c403b7999f149accbd1353b
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.jbrain.com/pub/linux/serial/
@@ -26,7 +27,7 @@ TCPSER jest u¿ywany jako tani sposób na udostêpnienie starszych
 systemów (np. 8-bitowych BBS-ów) w Internecie.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}%{_rc}
 %patch0 -p1
 
 %build
