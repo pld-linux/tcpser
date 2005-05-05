@@ -6,7 +6,7 @@ diff -Nru tcpser-1.0rc9-orig/Makefile tcpser-1.0rc9/Makefile
  CC = gcc
  DEF = 
 -CFLAGS = -O $(DEF) -Wall
-+CFLAGS += -Wall
++CFLAGS+= -Wall
  LDFLAGS = -lpthread
  DEPEND = makedepend $(DEF) $(CFLAGS)
  
