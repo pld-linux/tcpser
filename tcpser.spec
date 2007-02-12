@@ -1,6 +1,6 @@
 %define		_rc	rc9
 Summary:	A serial port to TCP/IP bridge
-Summary(pl):	Most pomiêdzy portem szeregowym a TCP/IP
+Summary(pl.UTF-8):   Most pomiÄ™dzy portem szeregowym a TCP/IP
 Name:		tcpser
 Version:	1.0
 Release:	0.%{_rc}.1
@@ -19,12 +19,12 @@ TCP/IP for both inbound and outbound connections. TCPSER is used as a
 low-cost way to put older computing systems (like 8-bit BBSes) on the
 Internet.
 
-%description -l pl
-TCPSER to program zamieniaj±cy port szeregowy PC w emulowany modem
-zgodny ze standardem Hayes(TM). Liniê telefoniczn± zastêpuje protokó³
-TCP/IP zapewniaj±cy obs³ugê po³±czeñ przychodz±cych i wychodz±cych.
-TCPSER jest u¿ywany jako tani sposób na udostêpnienie starszych
-systemów (np. 8-bitowych BBS-ów) w Internecie.
+%description -l pl.UTF-8
+TCPSER to program zamieniajÄ…cy port szeregowy PC w emulowany modem
+zgodny ze standardem Hayes(TM). LiniÄ™ telefonicznÄ… zastÄ™puje protokÃ³Å‚
+TCP/IP zapewniajÄ…cy obsÅ‚ugÄ™ poÅ‚Ä…czeÅ„ przychodzÄ…cych i wychodzÄ…cych.
+TCPSER jest uÅ¼ywany jako tani sposÃ³b na udostÄ™pnienie starszych
+systemÃ³w (np. 8-bitowych BBS-Ã³w) w Internecie.
 
 %prep
 %setup -q -n %{name}-%{version}%{_rc}
