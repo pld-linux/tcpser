@@ -1,6 +1,6 @@
 %define		_rc	rc9
 Summary:	A serial port to TCP/IP bridge
-Summary(pl.UTF-8):   Most pomiędzy portem szeregowym a TCP/IP
+Summary(pl.UTF-8):	Most pomiędzy portem szeregowym a TCP/IP
 Name:		tcpser
 Version:	1.0
 Release:	0.%{_rc}.1
